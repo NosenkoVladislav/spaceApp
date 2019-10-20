@@ -31,3 +31,5 @@ $('.prev_tm').click(function () {
 $('.next_tm').click(function () {
     sliderControl('.slider_team','Next')
 })
+
+AOS.init();
