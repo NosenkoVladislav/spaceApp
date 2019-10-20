@@ -1,0 +1,271 @@
+html {
+  font-family: Montserrat, sans-serif; }
+
+a {
+  text-decoration: none !important; }
+
+section {
+  padding: 50px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input, textarea {
+  font-family: Montserrat, sans-serif; }
+
+.title_h1 {
+  font-size: 60px;
+  margin-bottom: 60px; }
+
+.title_h2 {
+  font-size: 50px; }
+
+.title_h3 {
+  font-size: 30px; }
+
+.par {
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 1.3em; }
+
+.link {
+  text-decoration: none;
+  color: #000;
+  display: block; }
+
+.btn {
+  font-size: 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: transparent;
+  cursor: pointer;
+  width: 246px; }
+  .btn.crl {
+    background: var(--crl);
+    border: 4px solid var(--crl);
+    color: #fff; }
+
+.list {
+  list-style: none; }
+
+.container {
+  max-width: 1640px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.grid_block .content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 50px;
+  align-items: center; }
+
+.grid_block.rtl .content div:first-child {
+  order: 2; }
+
+.grid_block.rtl .content div:last-child {
+  order: 1; }
+
+.grid_block svg {
+  width: 100%;
+  height: auto; }
+
+.grid_block .line {
+  max-width: 100px;
+  height: 4px;
+  background: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px; }
+
+.centred_block {
+  max-width: 1256px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto; }
+  .centred_block.sm {
+    max-width: 860px; }
+  .centred_block.xsm {
+    max-width: 432px; }
+  .centred_block .par.sm {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  max-width: 300px; }
+  .logo .name {
+    font-size: 30px; }
+
+.header {
+  margin-top: 20px;
+  padding-bottom: 50px; }
+  .header .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px; }
+    .header .top .right_block {
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      color: #000; }
+      .header .top .right_block .request {
+        color: var(--crl);
+        border: 4px solid var(--crl);
+        margin-right: 40px; }
+    .header .top .navbar {
+      display: flex; }
+      .header .top .navbar .nav_item {
+        color: #000;
+        margin-right: 80px; }
+
+.propose .grid_block .title_h2 {
+  margin-bottom: 40px; }
+
+.slider_block {
+  position: relative; }
+  .slider_block .slider_item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    outline: none !important;
+    margin-right: 40px; }
+    .slider_block .slider_item .title_h3 {
+      font-weight: 600;
+      margin-bottom: 40px;
+      max-width: 340px; }
+    .slider_block .slider_item .par {
+      max-width: 540px; }
+  .slider_block .slider_stage .image {
+    margin-bottom: 40px; }
+  .slider_block .slider_stage,
+  .slider_block .slider_team {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+  .slider_block .slider_control {
+    position: absolute;
+    top: 45%; }
+    .slider_block .slider_control img {
+      cursor: pointer; }
+    .slider_block .slider_control.next {
+      right: 0; }
+    .slider_block .slider_control.prev {
+      left: 0; }
+
+.portfilio .centred_block.sm {
+  margin-bottom: 100px; }
+
+.portfilio .grid_block .title_h2 {
+  margin-bottom: 40px; }
+
+.team .slider_item .image {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .team .slider_item .image svg {
+    max-width: 550px; }
+
+.team .slider_item .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.team .slider_item .title_h2 {
+  margin-bottom: 30px; }
+
+.team .slider_item .par {
+  font-size: 24px; }
+
+.contactUs .sm {
+  margin-bottom: 70px; }
+
+.contactUs .form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .contactUs .form .side {
+    width: 100%; }
+  .contactUs .form .input_wrapper {
+    margin-bottom: 40px; }
+    .contactUs .form .input_wrapper:last-child {
+      margin-bottom: 0; }
+  .contactUs .form .input {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #6F6F6F;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 25px;
+    outline: none !important; }
+    .contactUs .form .input.textarea {
+      height: 100%;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px; }
+  .contactUs .form .btn_wrapper {
+    grid-column: 1/3;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+.footer .link {
+  font-size: 25px;
+  margin-bottom: 20px;
+  width: fit-content; }
+
+.footer .top .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .footer .top .container .column {
+    max-width: 350px; }
+
+.footer .title_h3 {
+  margin-bottom: 40px;
+  font-weight: 600; }
+
+.footer .bottom {
+  width: 100%;
+  border-top: 1px solid #D0D0D0;
+  padding: 15px 0; }
+  .footer .bottom .content_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px; }
+  .footer .bottom .copyright {
+    font-size: 22px; }
+  .footer .bottom .social {
+    display: flex;
+    align-items: center; }
+    .footer .bottom .social .social_item {
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin-right: 30px; }
+      .footer .bottom .social .social_item:last-child {
+        margin-right: 0; }
+      .footer .bottom .social .social_item img {
+        width: 100%; }
