@@ -22,15 +22,18 @@
     .grid_block .content svg {
       width: calc(100% - 20px); }
   .logo svg {
-    width: 90px; }
+    width: 80px;
+    height: auto; }
   .logo .name {
     font-size: 25px; }
-  .lang_switch .img_item img {
-    width: 30px; }
   .header .top .right_block {
     font-size: 18px; }
     .header .top .right_block .request {
-      margin-right: 20px; }
+      margin-right: 15px;
+      padding: 5px 10px;
+      width: 160px; }
+    .header .top .right_block .lang_switch .lang_img {
+      margin-left: 40px; }
   .header .top .navbar .nav_item {
     margin-right: 30px; }
   .team .slider_item .par {
@@ -80,11 +83,159 @@
       background: #000;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
-      border-radius: 10px; }
+      border-radius: 10px;
+      transition: ease-in-out .2s;
+      position: relative;
+      top: 0; }
+  .header .container {
+    background: #fff;
+    z-index: 9; }
+  .header .logo {
+    z-index: 9; }
   .header .top {
-    position: relative; }
+    margin-bottom: 0;
+    padding-bottom: 10px; }
+    .header .top .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .header .top .navbar .nav_item {
+        margin: 10px 0; }
     .header .top .right_block {
       position: absolute;
       background: #fff;
       display: flex;
-      height: 100px; } }
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 0;
+      top: 65px;
+      left: 0;
+      overflow: hidden;
+      transition: ease-in-out .2s; }
+      .header .top .right_block.open {
+        top: 65px;
+        height: 200px; }
+        .header .top .right_block.open ~ .menu_btn .line:first-child {
+          opacity: 0; }
+        .header .top .right_block.open ~ .menu_btn .line:nth-child(2) {
+          transform: rotate(45deg);
+          top: 0; }
+        .header .top .right_block.open ~ .menu_btn .line:last-child {
+          transform: rotate(-45deg);
+          top: -11px; }
+      .header .top .right_block .request {
+        width: 220px;
+        margin: 10px 0; }
+      .header .top .right_block .lang_switch {
+        width: 50px;
+        height: 20px;
+        margin-top: 10px; }
+        .header .top .right_block .lang_switch .lang_list {
+          width: auto; }
+  .clients .clients_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 40px 0 0 0; }
+    .clients .clients_list .clients_item {
+      margin: 0; }
+  .footer .top .container {
+    grid-gap: 20px; } }
+
+@media (max-width: 600px) {
+  .container {
+    max-width: unset; }
+  .title_h1 {
+    font-size: 28px; }
+  .par {
+    font-size: 16px;
+    margin-bottom: 15px; }
+  .btn {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto; }
+  .grid_block .content {
+    display: block; }
+    .grid_block .content .text {
+      text-align: center;
+      margin-top: 10px;
+      width: 100%; }
+      .grid_block .content .text .line {
+        margin-left: auto;
+        margin-right: auto; }
+  .grid_block.rtl .content .text {
+    width: 100%; }
+  .logo svg {
+    width: 60px; }
+  .slider_block .slider_item {
+    margin-right: 0; }
+    .slider_block .slider_item .title_h3 {
+      margin-bottom: 20px; }
+  .header {
+    padding-bottom: 30px; }
+    .header .top .right_block .request {
+      width: auto;
+      padding: 10px 20px; }
+    .header .body .text {
+      width: 100%;
+      text-align: center; }
+    .header .body .image {
+      display: none; }
+  .portfilio .grid_block .content {
+    display: flex;
+    flex-direction: column; }
+  .team .grid_block .content {
+    display: flex;
+    flex-direction: column; }
+  .contactUs .form {
+    display: block;
+    padding-top: 10px; }
+    .contactUs .form .input_wrapper {
+      margin-bottom: 20px;
+      padding-top: 5px; }
+    .contactUs .form .textarea {
+      margin-top: 20px;
+      min-height: 120px; }
+    .contactUs .form .btn_wrapper {
+      margin-top: 20px; }
+    .contactUs .form .err_msg.show {
+      top: -16px; }
+  .clients .clients_list .clients_item img {
+    height: 15vw; }
+  .footer {
+    background-color: #F7F7FA;
+    overflow: hidden; }
+    .footer .title_h3 {
+      font-size: 22px; }
+    .footer .link {
+      display: inline-block;
+      width: 100%; }
+    .footer .top .container {
+      display: block; }
+      .footer .top .container .column {
+        max-width: unset;
+        text-align: center; }
+        .footer .top .container .column:first-child {
+          display: none; }
+        .footer .top .container .column:nth-child(2) {
+          display: none; }
+    .footer .bottom {
+      padding-top: 0;
+      border: none; }
+      .footer .bottom .content_wrapper {
+        flex-direction: column-reverse; }
+  .social {
+    margin: 15px 0; }
+  .copyright {
+    text-align: center;
+    position: relative;
+    padding-top: 10px; }
+    .copyright:before {
+      content: '';
+      position: absolute;
+      width: 700px;
+      height: 1px;
+      top: 0;
+      left: -15px;
+      background: #6F6F6F; } }
